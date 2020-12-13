@@ -1,0 +1,70 @@
+/* 
+INPUT
+takes an integer from the console 
+
+OUTPUT
+prints the corresponding month. 
+
+If num > 12 || num < 1 
+    print "Error!" 
+
+Input
+    a single number.
+    
+Output
+    If num is within the boundaries 
+        print corresponding month, 
+        otherwise print "Error!
+*/
+
+function main(num) {
+    let month = '';
+
+    switch(num) {
+        case 1:
+            month = 'January';
+            break;
+        case 2:
+            month = 'February';
+            break;
+        case 3:
+            month = 'March';
+            break;
+        case 4:
+            month = 'April';
+            break;
+        case 5:
+            month = 'May';
+            break;
+        case 6:
+            month = 'June';
+            break;
+        case 7:
+            month = 'July';
+            break;
+        case 8:
+            month = 'August';
+            break;
+        case 9:
+            month = 'September';
+            break;
+        case 10:
+            month = 'October';
+            break;
+        case 11:
+            month = 'November';
+            break;
+        case 12:
+            month = 'December';
+            break;
+        default:
+            console.log(`Error!`);
+            break;            
+    }
+
+    console.log(`${month}`);
+
+}
+
+main(2);
+main(13);

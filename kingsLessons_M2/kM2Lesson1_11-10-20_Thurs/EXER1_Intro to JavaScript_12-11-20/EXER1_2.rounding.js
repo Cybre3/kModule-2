@@ -19,9 +19,13 @@ output
 */
 
 function round(numToRound, decimalPlace) {
+    
+    if (decimalPlace > 15) {
+        decimalPlace = 15;
+    }
     let roundNum = numToRound.toFixed(decimalPlace);
-    // console.log(parseFloat(roundNum));
-    console.log(roundNum);
+    
+    console.log(parseFloat(roundNum));
 }
 
 round(3.1415926535897932384626433832795, 2);
