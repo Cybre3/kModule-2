@@ -9,7 +9,15 @@ Return the result like examples below
 function leap(year) {
     let leap = '';
 
-    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    // if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    //     leap = 'yes';
+    // } else {
+    //     leap = 'no';
+    // }
+
+    if ((year % 4 === 0 && year % 100 !== 0)) {
+        leap = 'yes';
+    } else if(year % 400 === 0){
         leap = 'yes';
     } else {
         leap = 'no';
