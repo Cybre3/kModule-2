@@ -1,10 +1,15 @@
-// function main(binaryNum) {
+function main(binaryNum) {
+  let sum = 0;
 
-//     console.log(parseInt(binaryNum).toString(10));
-// }
+  for (let i = binaryNum.length - 1; i >= 0; i--) {
+      
+    if (binaryNum[i] === '1') {
+      sum += 2 ** (binaryNum.length - 1 - i);
+    }
+  }
 
-console.log(parseInt('1001', 2));
+  console.log(sum);
+}
 
-
-// main('00001001');
-// main('11110000');
+main('1000011010101101011');
+main('11110000');
