@@ -1,6 +1,5 @@
 function main(numsArr) {
     let nextNum = numsArr[1];
-    let ascendingArr = numsArr.filter((currentNum) => nextNum > currentNum && nextNum > numsArr[0]);
 
     // for(let i = 0; i < numsArr.length; i++) {
     //     if(numsArr[i])
