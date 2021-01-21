@@ -1,13 +1,17 @@
 let sortSums = (num) => {
   let evenSum = 0;
   let oddSum = 0;
-  for (let number in num) {
-    if (number.includes()) {
-      oddSum += number;
+  let tempNum = String(num);
+  
+  for (let i = tempNum.length - 1; i >= 0; i--) {
+    if (tempNum[i] % 2 !== 0) {
+      oddSum += +tempNum[i];
     } else {
-      evenSum += number;
+      evenSum += +tempNum[i];
     }
   }
+  
+  return `Odd sum = ${oddSum}, Even sum = ${evenSum}`;
 };
 
 function main(inputNum) {
