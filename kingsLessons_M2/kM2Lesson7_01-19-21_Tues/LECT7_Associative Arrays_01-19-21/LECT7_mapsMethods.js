@@ -24,4 +24,4 @@ mapData1.set(address, 'john');
 // console.log(mapData2);
 
 let keysArr = Array.from(mapData2.keys());
-console.log(keyArr);
+console.log(keysArr);

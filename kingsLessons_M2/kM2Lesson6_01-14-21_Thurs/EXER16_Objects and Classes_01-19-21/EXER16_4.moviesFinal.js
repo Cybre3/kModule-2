@@ -6,23 +6,18 @@ function main(movieCommandArr) {
             let [nothing, movieName] = command.split('addMovie ');
             movieArr.push({ name: movieName });
 
-        } else if (command.includes('directedBy')) {
+        } else {
             let [checkMovie, directorName] = command.split(' directedBy ');
-
-            movieArr.forEach((movie, index) => {
-                if (movie.name === checkMovie) {
-                    movieArr[index].director = directorName;
-                }
-            });
+            let [movieName, movieDate] = command.split(' onDate ');
             
-        } else if (command.includes('onDate')) {
-            let [checkMovie, movieDate] = command.split(' onDate ');
-
             movieArr.forEach((movie, index) => {
-                if (movie.name === checkMovie) {
+
+                if (command.includes('directedBy') && movie.name === checkMovie) {
+                    movieArr[index].director = directorName;
+                } else if (command.includes('onDate') && movie.name === movieName) {
                     movieArr[index].date = movieDate;
                 }
-            });
+            });            
         }
     });
 
