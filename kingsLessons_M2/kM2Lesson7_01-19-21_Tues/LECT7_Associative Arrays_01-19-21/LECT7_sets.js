@@ -1,8 +1,8 @@
 let setData = new Set();
 let setData2 = new Set(['John', 10, false, 'John']);
-// console.log(setData2);
-// setData2.add('11');
-// console.log(setData2);
+console.log(setData2);
+setData2.add('11');
+console.log(setData2);
 
 let entries = setData2.entries();
 console.log(entries);
