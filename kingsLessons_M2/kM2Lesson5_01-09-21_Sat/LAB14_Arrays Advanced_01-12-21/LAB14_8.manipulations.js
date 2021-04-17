@@ -22,7 +22,7 @@ function main(inputArr) {
     }
   });
 
-  console.log(arr);
+  console.log(arr.join(' ');
 }
 
 main(['4 19 2 53 6 43', 'Add 3', 'Remove 2', 'RemoveAt 1', 'Insert 8 3']);
